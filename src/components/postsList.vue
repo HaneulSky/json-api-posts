@@ -4,13 +4,10 @@ import { useStore } from 'vuex'
 
 import SearchField from './UI/searchField.vue'
 import PostCard from './UI/postCard.vue'
-import Pagination from './UI/pagination.vue'
 
 const store = useStore()
-const itemPerPage = 10
 
 const author = ref('')
-const page = ref()
 
 onMounted(() => {
   store.dispatch('user/fetchUsersList')
@@ -19,11 +16,6 @@ onMounted(() => {
 
 const usersList = computed(() => store.getters['user/USERS'])
 const postsList = computed(() => store.getters['post/POSTS'])
-
-//для пагинации
-const itemsCount = computed(() => {
-  return Math.ceil(postsList.value.length / itemPerPage)
-})
 
 watch(author, () => {
   store.dispatch('post/fetchPostsByUser', author)
