@@ -6,9 +6,6 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    outDir: 'build'
-  },
   plugins: [vue(), vuetify({ autoImport: true })],
   resolve: {
     alias: {
