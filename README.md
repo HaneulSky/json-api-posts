@@ -1,3 +1,5 @@
+Деплой проекта по [ССЫЛКЕ](https://fluffy-malabi-75c4d3.netlify.app/)
+
 # posts-project
 
 This template should help get you started developing with Vue 3 in Vite.
