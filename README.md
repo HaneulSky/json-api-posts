@@ -1,3 +1,4 @@
+Выполнялось для тестового задания.  
 Деплой проекта по [ССЫЛКЕ](https://fluffy-malabi-75c4d3.netlify.app/)
 
 # posts-project
